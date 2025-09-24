@@ -1,0 +1,21 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAeDqbz8Er59VZP5xxTkOcpZAhJGTpfMIk",
+  authDomain: "app-react-native-lilo-01.firebaseapp.com",
+  projectId: "app-react-native-lilo-01",
+  storageBucket: "app-react-native-lilo-01.firebasestorage.appspot.com",
+  messagingSenderId: "813349607669",
+  appId: "1:813349607669:web:bc1e3de27c3e4b0427cdbc"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const db = getFirestore(app);
